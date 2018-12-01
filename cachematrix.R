@@ -3,15 +3,15 @@
 ### Create matrix mx
 
 makeCacheMatrix <- function(mx = matrix()) {
-      ###Initialize inverse property(matrix) 
+  ###Initialize inverse property(matrix) 
   i <- NULL
   
-        ###Set matrix
+  ###Set matrix
   set <- function( matrix ) {
     mx <<- matrix
     i <<- NULL
-}
- ## Method to get the matrix
+  }
+  ## Method to get the matrix
   get <- function() {
     ## Return the matrix
     mx
@@ -39,8 +39,8 @@ makeCacheMatrix <- function(mx = matrix()) {
 ### changed), then the "cachesolve" should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-     mx <- x$getInverse()
+  ## Return a matrix that is the inverse of 'x'
+  mx <- x$getInverse()
   
   ###  Return the inverse if already exist
   if( !is.null(mx) ) {
@@ -59,5 +59,4 @@ cacheSolve <- function(x, ...) {
   
   ### Return matrix
   mx
-}   
-}
+} 
